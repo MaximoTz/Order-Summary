@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+
+
+
+body{
+    background:hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+main .container{
+    background: hsl(225, 100%, 98%);
+    width: 100%;
+    max-width: 380px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+main .container img{
+    max-width: 380px;
+}
+
+main .container .text{
+    text-align: center;
+    padding: 20px;
+}
+
+main .container .text h1{
+    font-size: 25px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+main .container .text p{
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+main .container .section-box{
+    background: hsl(231, 23%, 94%);
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 0px auto;
+    min-height: 80px;
+    gap: 2px;
+}
+
+main .container img{
+    margin-right: 15px;
+}
+
+main .container .section-box .prices h3{
+    color: hsl(223, 47%, 23%);
+    font-size: 16px;
+    margin: 0;
+}
+
+main .container .section-box .prices .money{
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    margin: 0;
+}
+
+main .container .a .change{
+    margin-left: 80px;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+}
+
+main .container .a .change:hover{
+    color: hsla(245, 75%, 52%, 0.61);
+}
+
+main .btn{
+    text-align: center;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px
+
+}
+
+main .container .btn .end{
+    text-align: center;
+    background: hsl(245, 75%, 52%);
+    color: white;
+    padding: 13px;
+    border-radius: 10px;
+    font-weight: 700;
+    margin: 10px 0;
+    box-shadow: 0px 10px 20px hsla(245, 75%, 52%, 0.466);
+}
+
+main .container .btn .end:hover{
+    background: hsla(245, 75%, 52%, 0.61);
+}
+
+main .container a {
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    text-decoration: none;
+    margin: 15px;
+}
+
+footer{
+    margin-top: 25px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(17, 75%, 37%); }
+
+@media screen and (max-width:400px) {
+    main .container{
+        width: 100%;
+        max-width: 330px;
+    }
+
+    main .container .section-box{
+        width: 100%;
+        max-width: 280px !important;
+    }
+
+    main .container .section-box .a .change{
+        margin-left: 35px;
+    }
+
+}
